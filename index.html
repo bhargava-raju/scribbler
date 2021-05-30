@@ -2,11 +2,13 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <!-- Main CSS file -->
     <link href='styles/index.css' rel='stylesheet' type='text/css'>
     <!-- Header CSS file -->
     <link href='styles/common.css' rel='stylesheet' type='text/css'>
     <!-- TODO: Include Font Awesome file here -->
+    <script src="https://use.fontawesome.com/12e84c3aa6.js"></script>
     <!-- TODO: Include Google Fonts file here -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
@@ -33,14 +35,40 @@
         </div>
         <!-- The Modal -->
         <div id="signUpModal" class="modal">
-
             <!-- Modal content -->
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <div class="modal-header">
+                    <span class="close-icon" id="closeSignUp"><i class="fa fa-times fa-lg" aria-hidden="true"></i></span>
+                    <h3 class="modal-heading">Get Started</h3>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required="true" />
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username" required="true" />
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter your password" required="true" />
+                        </div>
+                        <div class="form-group">
+                            <label for="cnfpwd">Confirm Password</label>
+                            <input type="password" class="form-control" id="cnfpwd" placeholder="Re-enter your password" required="true" />
+                        </div>
+                        <button type="submit" class="btn btn-block btn-success">Sign Up</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
     <!-- Custom JS file -->
     <script src="scripts/common.js"></script>
     <script src="scripts/index.js"></script>
