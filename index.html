@@ -15,16 +15,26 @@
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
-    <header>
-        <div class="title-container">
-            <p class="title">ScriBBler</p>
-            <p class="title-tagline">Explore, Imagine, Create</p>
+    <div id="main-container">
+        <header>
+            <div class="title-container">
+                <p class="title">ScriBBler</p>
+                <p class="title-tagline">Explore, Imagine, Create</p>
+            </div>
+            <div class="login-buttons-container">
+                <button id="signInBtn" class="topButtons" type="button">Sign In</button>
+                <button id="signUpBtn" class="topButtons" type="button">Sign Up</button>            
+            </div>     
+        </header>
+        <div class="postButtonArea">
+            <!-- Code for All Posts & Create Post button here -->
+            <button onclick="location.href='./html/bloglist.html'" class="postButtons" type="button">All Posts</button>
+            <button id="createPostBtn" class="postButtons" type="button">Create Post</button>
         </div>
-        <div class="login-buttons-container">
-            <button id="signUpBtn" class="topButtons" type="button">Sign Up</button>
-            <button id="signInBtn" class="topButtons" type="button">Sign In</button>
-        </div>     
-    </header>
+    </div>
+    
+
+
 </body>
 
 </html>
