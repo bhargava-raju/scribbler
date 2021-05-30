@@ -8,10 +8,16 @@
     font-family: 'Montez', cursive; 
     color: blue;
     font-weight: 50;
+    font-size: xx-large;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .title-tagline {
     font-family: 'Ubuntu Mono', monospace;
+    font-size:15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 header {

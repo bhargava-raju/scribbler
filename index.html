@@ -2,15 +2,15 @@
 <html>
 
 <head>
-     <!-- Main CSS file -->
-     <link href='styles/index.css' rel='stylesheet' type='text/css'>
-     <!-- Header CSS file -->
-     <link href='styles/common.css' rel='stylesheet' type='text/css'>
+    <!-- Main CSS file -->
+    <link href='styles/index.css' rel='stylesheet' type='text/css'>
+    <!-- Header CSS file -->
+    <link href='styles/common.css' rel='stylesheet' type='text/css'>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,16 +23,27 @@
             </div>
             <div class="login-buttons-container">
                 <button id="signInBtn" class="topButtons" type="button">Sign In</button>
-                <button id="signUpBtn" class="topButtons" type="button">Sign Up</button>            
-            </div>     
+                <button id="signUpBtn" class="topButtons" type="button">Sign Up</button>
+            </div>
         </header>
         <div class="postButtonArea">
             <!-- Code for All Posts & Create Post button here -->
             <button onclick="location.href='./html/bloglist.html'" class="postButtons" type="button">All Posts</button>
             <button id="createPostBtn" class="postButtons" type="button">Create Post</button>
         </div>
+        <!-- The Modal -->
+        <div id="signUpModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
     </div>
-    
+    <!-- Custom JS file -->
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
 
 
 </body>
