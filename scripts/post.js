@@ -21,3 +21,19 @@ function saveContent(){
     editButton.style.display="block";
     saveButton.style.display="none"; 
 }
+
+var numberOfClicks=0;
+function postLiked(){
+   var button = document.getElementById("addLikes")
+   button.innerHTML = '<i class="fa fa-thumbs-up ">'+'</i>'+'&nbsp;'+"Liked!";
+   button.style.border="none";
+    numberOfClicks += 1;
+    if(numberOfClicks!=0){
+        if (numberOfClicks==1){
+            document.getElementById('likeCount').innerHTML = numberOfClicks + " person likes this!";
+        }
+        else {
+            document.getElementById('likeCount').innerHTML = numberOfClicks + " people have liked this!";
+        }
+        }
+    }
