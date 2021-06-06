@@ -4,9 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-    <!-- Main CSS file -->    
+
+    <!-- Custom CSS file -->
     <link href='/styles/postslist.css' rel='stylesheet' type='text/css'>
-    <!-- Main CSS file -->    
     <link href='/styles/common.css' rel='stylesheet' type='text/css'>
     <link href='/styles/post.css' rel='stylesheet' type='text/css'>
 
@@ -16,22 +16,22 @@
     <!-- TODO: Include Google Fonts file here -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
 
-<body>    
+<body>
     <header>
-            <!--Add code for "ScriBBler" heading and the sub-heading -->
-            <div class="title-container">            
-                <p class="title">ScriBBler</p>
-                <p class="title-tagline">Explore, Imagine, Create</p>
-            </div>
-            
-             <!-- Insert code for Sign Up, Sign In button here -->
-            <div class="login-buttons-container">
-                <button id="signInBtn" class="topButtons" type="button">Sign In</button>
-                <button id="signUpBtn" class="topButtons" type="button">Sign Up</button>
-            </div>
+        <!--Code for "ScriBBler" heading and the sub-heading -->
+        <div class="title-container">
+            <p class="title">ScriBBler</p>
+            <p class="title-tagline">Explore, Imagine, Create</p>
+        </div>
+
+        <!-- Code for Sign Up, Sign In button here -->
+        <div class="login-buttons-container">
+            <button id="signInBtn" class="topButtons" type="button">Sign In</button>
+            <button id="signUpBtn" class="topButtons" type="button">Sign Up</button>
+        </div>
     </header>
 
     <!-- The Signup Modal -->
@@ -39,8 +39,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close-icon" id="closeSignUp"><i class="fa fa-times fa-lg"
-                        aria-hidden="true"></i></span>
+                <span class="close-icon" id="closeSignUp"><i class="fa fa-times fa-lg" aria-hidden="true"></i></span>
                 <h3 class="modal-heading">Get Started</h3>
             </div>
             <div class="modal-body">
@@ -75,8 +74,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close-icon" id="closeSignIn"><i class="fa fa-times fa-lg"
-                        aria-hidden="true"></i></span>
+                <span class="close-icon" id="closeSignIn"><i class="fa fa-times fa-lg" aria-hidden="true"></i></span>
                 <h3 class="modal-heading">Welcome Back!</h3>
             </div>
             <div class="modal-body">
@@ -104,7 +102,7 @@
         </div>
 
         <div class="postAuthor">
-            <!-- Insert code for Edit/Save button and  -->
+            <!-- Code for Edit/Save button and  -->
             <button id="editButton" class="editSaveBtn" onclick="editContent()">Edit&nbsp;<i
                     class="fa fa-pencil-square-o"></i></button>
             <button id="saveButton" class="editSaveBtn" onclick="saveContent()">Save&nbsp;<i
@@ -137,30 +135,29 @@
             </p>
         </div>
 
-        <!-- Insert code for Like button, Comment button, Comment box here-->
+        <!-- Code for Like button, Comment button, Comment box here-->
         <div class="Like">
-            <button id="addLikes" class="addLikecomments" onclick="postLiked()"><i class="fa fa-thumbs-up "></i>&nbsp;Like</button><br>
-            <label id="likeCount" class="Likes" value="" >Be the first one to like this!</label>
+            <button id="addLikes" class="addLikecomments" onclick="postLiked()"><i
+                    class="fa fa-thumbs-up "></i>&nbsp;Like</button><br>
+            <label id="likeCount" class="Likes" value="">Be the first one to like this!</label>
         </div>
 
         <div class="Comments">
-            <textarea id="userComments" type="text"  placeholder="Leave a comment..."></textarea><br>
+            <textarea id="userComments" type="text" placeholder="Leave a comment..."></textarea><br>
             <button id="addComments" class="addLikecomments" onclick="addComment(userComments)">Comment</button>
         </div>
         <h4>All Comments</h4>
         <div id="addComment">
-        
-        </div>
-    </div>
 
-     <!-- list of all posts ends here -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- 
- 
-     <!-- Custom JS file -->
-     <script src="./../scripts/common.js"></script>
-     <script src="./../scripts/index.js"></script>    
-     <script src="./../scripts/postslist.js"></script>    
-     <script src="./../scripts/post.js"></script>    
-     </body>
+        </div>
+        <div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+            <!-- Custom JS file -->
+            <script src="./../scripts/common.js"></script>
+            <script src="./../scripts/index.js"></script>
+            <script src="./../scripts/postslist.js"></script>
+            <script src="./../scripts/post.js"></script>
+</body>

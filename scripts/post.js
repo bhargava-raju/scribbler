@@ -1,7 +1,9 @@
+//Variable to store the controls
 var titleConetnt = document.getElementById('postTitleNew');
 var contentText = document.getElementById('postBody');
 var editButton = document.getElementById('editButton');
 var saveButton = document.getElementById('saveButton');
+
 // edit and save the content
 function editContent() {
     contentText.contentEditable = "true";
@@ -22,6 +24,7 @@ function saveContent() {
     saveButton.style.display = "none";
 }
 
+// Function to track the number of likes
 var numberOfClicks = 0;
 function postLiked() {
     var button = document.getElementById("addLikes")

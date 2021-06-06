@@ -3,8 +3,8 @@ var signUpModal = document.getElementById("signUpModal");
 var signInModal = document.getElementById("signInModal");
 
 // Search for the button to open modals
-var signUpBtn  = document.getElementById("signUpBtn");
-var signInBtn  = document.getElementById("signInBtn");
+var signUpBtn = document.getElementById("signUpBtn");
+var signInBtn = document.getElementById("signInBtn");
 var signUpLink = document.getElementById("signUpLink");
 
 // Search the button to close modal
@@ -30,7 +30,7 @@ closeSignUp.addEventListener("click", () => closeModal(signUpModal));
 closeSignIn.addEventListener("click", () => closeModal(signInModal));
 
 //Event to handle the click on outer area which closes the modal
-window.addEventListener("click", function(event) {
+window.addEventListener("click", function (event) {
   if (event.target == signUpModal) {
     signUpModal.style.display = "none";
   }
@@ -40,7 +40,7 @@ window.addEventListener("click", function(event) {
 });
 
 //Handling the link inside the sign in modal
-signUpLink.onclick = function() {
+signUpLink.onclick = function () {
   closeModal(signInModal);
   openModal(signUpModal);
 };
